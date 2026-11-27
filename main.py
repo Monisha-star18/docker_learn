@@ -6,6 +6,7 @@ app = FastAPI(title = "Hi-app")
 def root ():
     return{"hello world welcome"}
 
+#health
 @app.get("/health")
 def health ():
     return {"status":"ok"}
